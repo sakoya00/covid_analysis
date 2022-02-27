@@ -31,6 +31,7 @@ FROM covid_deaths
 WHERE continent IS NOT NULL
 GROUP BY continent;
 
+--IN PROGRESS
 --Total vaccinations per population by location
 --Check version of SQLiteStudio to make sure it can run window functions like PARTITION BY
 SELECT cd.continent, cd.location, cd.date, cd.population, cv.new_vaccinations,
